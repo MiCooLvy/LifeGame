@@ -31,7 +31,7 @@ def main():
         world = T_world.copy()
         tk.update_idletasks()
         tk.update()
-        # time.sleep(0.01)
+        time.sleep(0.01)
     rate = (np.sum(world) * 100) / (MAX_CELL_X * MAX_CELL_Y)
     cv.create_text(CENTER_X, CENTER_Y, fill='white', font=20, text="生存率:" + np.str(rate.round(2)) + "%")
     print("生存率:" + np.str(rate.round(2)) + "%")
